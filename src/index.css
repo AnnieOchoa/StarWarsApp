@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 :root {
-  --primaryColor: #06212a;
+  --primaryColor: #000;
   --secundaryColor: #ffe81f;
   --thirdColor: #fff;
 }
@@ -121,7 +121,7 @@ h6 {
   gap: 30px;
 }
 .main-login__img {
-  background-image: url(assets/images/loginBG.jpg);
+  background-image: url(https://res.cloudinary.com/dy6gbr4oc/image/upload/v1711493087/Starwarsapp/desktop-wallpaper-sword-star-wars-revenge-of-the-sith-iodine-yoda-wars-episode-iii-1280x1024-yoda-iodine_1_bbhcfg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -131,6 +131,65 @@ h6 {
 @media (max-width: 960px) {
   .main-login__img {
     background-color: #000;
+    height: 1000px;
+    width: 100%;
+  }
+}
+
+.main-signup {
+  display: flex;
+  width: 100%;
+  background-color: #000;
+}
+.main-signup img {
+  display: flex;
+  align-self: self;
+  margin: 0 auto;
+  width: 268px;
+  height: 190px;
+}
+.main-signup h1 {
+  text-align: center;
+  color: var(--secundaryColor);
+  font-weight: 900;
+}
+.main-signup p {
+  text-align: center;
+  color: white;
+}
+@media (max-width: 960px) {
+  .main-signup {
+    flex-direction: column-reverse;
+  }
+}
+.main-signup__form {
+  height: 100vh;
+  flex: 0 1 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-signup__form--form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 50px auto;
+  gap: 30px;
+}
+.main-signup__img {
+  background-image: url(https://res.cloudinary.com/dy6gbr4oc/image/upload/v1711493191/Starwarsapp/darth_xn2nfj.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  flex: 0 1 55%;
+  opacity: 60%;
+}
+@media (max-width: 960px) {
+  .main-signup__img {
+    background-color: var(--primaryColor);
     height: 1000px;
     width: 100%;
   }
