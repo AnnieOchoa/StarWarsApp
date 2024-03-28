@@ -136,4 +136,62 @@ h6 {
   }
 }
 
+.main-home {
+  display: grid;
+  width: 100%;
+  background-color: var(--primaryColor);
+}
+.main-home img {
+  display: flex;
+  align-self: self;
+  margin: 0 auto;
+  width: 268px;
+  height: 190px;
+}
+.main-home h1 {
+  text-align: center;
+  color: var(--secundaryColor);
+  font-weight: 900;
+}
+.main-home p {
+  text-align: center;
+  color: white;
+}
+@media (max-width: 960px) {
+  .main-home {
+    flex-direction: column-reverse;
+  }
+}
+.main-home__form {
+  height: 100vh;
+  flex: 0 1 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-home__form--form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 50px auto;
+  gap: 30px;
+}
+.main-home__img {
+  background-image: url(assets/images/loginBG.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  flex: 0 1 55%;
+}
+@media (max-width: 960px) {
+  .main-home__img {
+    background-color: #000;
+    height: 1000px;
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
