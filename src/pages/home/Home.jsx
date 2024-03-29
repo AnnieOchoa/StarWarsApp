@@ -17,6 +17,7 @@ export const Home = () => {
         <li><a href='#'>PELICULAS</a></li>
         <li><a href='#'>PERSONAJES</a></li>
         <li><a href='#'>PLANETAS</a></li>
+        <li><a href='#'>LOGIN</a></li>
         </ul>
       </nav>
 
@@ -37,7 +38,7 @@ export const Home = () => {
       <p className="legend">Planetas</p>
      </div>
    </Carousel>
-    <section className="main-home__img"></section> 
+   <section className="main-home__img"></section> 
   </main>
 
   

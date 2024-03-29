@@ -1,6 +1,6 @@
 $primary-color: #000000;
-$nav-bg-color: #eee;
-$nav-text-color: #555;
+$nav-bg-color: #2b2a0e;
+$nav-text-color: #ead9d9;
 
 .main-home {
     display: grid;
@@ -26,12 +26,13 @@ $nav-text-color: #555;
     }
 
     &__img {
-      background-image: url(assets/images/footer.jpg);
+      background-image: url(assets/images/sableAmarillo.webp);
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: center;
-      height: 100vh;
-      flex: 0 1 20%;
+      background-position: left;
+      height: 20vh;
+      flex: 0 1 10%;
+     
       @media (max-width: 960px) {
         background-color: #000;
         height: 1000px;
@@ -64,7 +65,9 @@ $nav-text-color: #555;
                 }
             }
         }
+        
 }
+
   }
 
   

@@ -162,12 +162,12 @@ h6 {
   }
 }
 .main-home__img {
-  background-image: url(assets/images/footer.jpg);
+  background-image: url(assets/images/sableAmarillo.webp);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  flex: 0 1 20%;
+  background-position: left;
+  height: 20vh;
+  flex: 0 1 10%;
 }
 @media (max-width: 960px) {
   .main-home__img {
@@ -180,7 +180,7 @@ h6 {
   margin-top: 10px;
   margin-bottom: 60px;
   text-align: center;
-  background-color: #eee;
+  background-color: #2b2a0e;
   padding: 10px 20px;
 }
 .main-home .nav-home .nav-list {
@@ -194,7 +194,7 @@ h6 {
 }
 .main-home .nav-home .nav-list li a {
   text-decoration: none;
-  color: #555;
+  color: #ead9d9;
 }
 .main-home .nav-home .nav-list li a:hover {
   color: #000000;
