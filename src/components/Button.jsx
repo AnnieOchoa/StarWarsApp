@@ -1,4 +1,6 @@
-const Button = ({ name, onClick, style = 'filled' }) => {
+import { Link } from 'react-router-dom';
+
+const Button = ({ name, onClick, style = 'filled', path, type }) => {
   const getStyle = () => {
     if (style === 'filled') {
       return 'filled-btn';
@@ -10,8 +12,16 @@ const Button = ({ name, onClick, style = 'filled' }) => {
       return 'text-btn';
     }
   };
+
+  if (path) {
+    return (
+      <Link className={getStyle()} to={path}>
+        {name}
+      </Link>
+    );
+  }
   return (
-    <button className={getStyle()} onClick={onClick}>
+    <button className={getStyle()} onClick={onClick} type={type}>
       {name}
     </button>
   );
