@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 :root {
-  --primaryColor: #06212a;
+  --primaryColor: #000000;
   --secundaryColor: #ffe81f;
   --thirdColor: #fff;
 }
@@ -146,7 +146,6 @@ h6 {
   align-self: self;
   margin: 0 auto;
   width: 268px;
-  height: 190px;
 }
 .main-home h1 {
   text-align: center;
@@ -162,29 +161,13 @@ h6 {
     flex-direction: column-reverse;
   }
 }
-.main-home__form {
-  height: 100vh;
-  flex: 0 1 45%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.main-home__form--form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin: 50px auto;
-  gap: 30px;
-}
 .main-home__img {
-  background-image: url(assets/images/loginBG.jpg);
-  background-size: cover;
+  background-image: url(assets/images/footer.jpg);
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
-  flex: 0 1 55%;
+  flex: 0 1 20%;
 }
 @media (max-width: 960px) {
   .main-home__img {
@@ -192,6 +175,29 @@ h6 {
     height: 1000px;
     width: 100%;
   }
+}
+.main-home .nav-home {
+  margin-top: 10px;
+  margin-bottom: 60px;
+  text-align: center;
+  background-color: #eee;
+  padding: 10px 20px;
+}
+.main-home .nav-home .nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.main-home .nav-home .nav-list li {
+  display: inline-block;
+  margin-right: 80px;
+}
+.main-home .nav-home .nav-list li a {
+  text-decoration: none;
+  color: #555;
+}
+.main-home .nav-home .nav-list li a:hover {
+  color: #000000;
 }
 
 /*# sourceMappingURL=index.css.map */

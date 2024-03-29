@@ -1,3 +1,7 @@
+$primary-color: #000000;
+$nav-bg-color: #eee;
+$nav-text-color: #555;
+
 .main-home {
     display: grid;
     width: 100%;
@@ -7,7 +11,6 @@
       align-self: self;
       margin: 0 auto;
       width: 268px;
-      height: 190px;
     }
     h1 {
       text-align: center;
@@ -21,34 +24,47 @@
     @media (max-width: 960px) {
       flex-direction: column-reverse;
     }
-    &__form {
-      height: 100vh;
-      flex: 0 1 45%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      &--form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin: 50px auto;
-        gap: 30px;
-      }
-    }
+
     &__img {
-      background-image: url(assets/images/loginBG.jpg);
-      background-size: cover;
+      background-image: url(assets/images/footer.jpg);
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
       height: 100vh;
-      flex: 0 1 55%;
+      flex: 0 1 20%;
       @media (max-width: 960px) {
         background-color: #000;
         height: 1000px;
         width: 100%;
       }
     }
+    .nav-home{
+        margin-top: 10px;
+        margin-bottom: 60px;
+        text-align: center;
+        background-color: $nav-bg-color;
+        padding: 10px 20px;
+    
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+    
+            li {
+                display: inline-block;
+                margin-right: 80px;
+    
+                a {
+                    text-decoration: none;
+                    color: $nav-text-color;
+    
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+}
   }
+
   
