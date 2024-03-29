@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 :root {
-  --primaryColor: #000;
+  --primaryColor: #000000;
   --secundaryColor: #ffe81f;
   --thirdColor: #fff;
 }
@@ -193,6 +193,70 @@ h6 {
     height: 1000px;
     width: 100%;
   }
+}
+
+.main-home {
+  display: grid;
+  width: 100%;
+  background-color: var(--primaryColor);
+}
+.main-home img {
+  display: flex;
+  align-self: self;
+  margin: 0 auto;
+  width: 268px;
+}
+.main-home h1 {
+  text-align: center;
+  color: var(--secundaryColor);
+  font-weight: 900;
+}
+.main-home p {
+  text-align: center;
+  color: white;
+}
+@media (max-width: 960px) {
+  .main-home {
+    flex-direction: column-reverse;
+  }
+}
+.main-home__img {
+  background-image: url(assets/images/sableAmarillo.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 20vh;
+  flex: 0 1 10%;
+}
+@media (max-width: 960px) {
+  .main-home__img {
+    background-color: #000;
+    height: 1000px;
+    width: 100%;
+  }
+}
+.main-home .nav-home {
+  margin-top: 10px;
+  margin-bottom: 60px;
+  text-align: center;
+  background-color: #2b2a0e;
+  padding: 10px 20px;
+}
+.main-home .nav-home .nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.main-home .nav-home .nav-list li {
+  display: inline-block;
+  margin-right: 80px;
+}
+.main-home .nav-home .nav-list li a {
+  text-decoration: none;
+  color: #ead9d9;
+}
+.main-home .nav-home .nav-list li a:hover {
+  color: #000000;
 }
 
 /*# sourceMappingURL=index.css.map */
