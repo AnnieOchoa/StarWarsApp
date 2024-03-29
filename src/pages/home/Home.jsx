@@ -5,6 +5,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import  personajes  from '../../assets/images/personajesCarrusel.jpeg';
 import  peliculas  from '../../assets/images/peliculasCarrusel.jpg';
 import  planetas  from '../../assets/images/planetasCarrusel.webp';
+import { Link} from "react-router-dom";
 
 export const Home = () => {
   return (
@@ -16,7 +17,7 @@ export const Home = () => {
         <li><a href='#'>HOME</a></li>
         <li><a href='#'>PELICULAS</a></li>
         <li><a href='#'>PERSONAJES</a></li>
-        <li><a href='#'>PLANETAS</a></li>
+        <li>  <Link to='/planetList' > PLANETAS</Link></li>
         <li><a href='#'>LOGIN</a></li>
         </ul>
       </nav>
