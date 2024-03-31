@@ -6,12 +6,6 @@ $nav-text-color: #ead9d9;
   display: grid;
   width: 100%;
   background-color: var(--primaryColor);
-  img {
-    display: flex;
-    align-self: self;
-    margin: 0 auto;
-    width: 268px;
-  }
   h1 {
     text-align: center;
     color: var(--secundaryColor);
@@ -26,11 +20,11 @@ $nav-text-color: #ead9d9;
   }
 
   &__img {
-    background-image: url(assets/images/sableAmarillo.webp);
+    background-image: url(assets/images/footerblack.webp);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
-    height: 20vh;
+    height: 50vh;
     flex: 0 1 10%;
 
     @media (max-width: 960px) {

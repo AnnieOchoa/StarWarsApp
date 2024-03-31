@@ -6,32 +6,12 @@ import personajes from '../../assets/images/personajesCarrusel.jpeg';
 import peliculas from '../../assets/images/peliculasCarrusel.jpg';
 import planetas from '../../assets/images/planetasCarrusel.webp';
 import { Link } from 'react-router-dom';
+import { Header } from '../../components/Header';
 
 export const Home = () => {
   return (
     <main className="main-home">
-      <img src={logo} alt="logo" />
-
-      <nav className="nav-home">
-        <ul className="nav-list">
-          <li>
-            <a href="#">HOME</a>
-          </li>
-          <li>
-            <a href="#">PELICULAS</a>
-          </li>
-          <li>
-            <a href="#">PERSONAJES</a>
-          </li>
-          <li>
-            {' '}
-            <Link to="/planetList"> PLANETAS</Link>
-          </li>
-          <li>
-            <a href="#">LOGIN</a>
-          </li>
-        </ul>
-      </nav>
+      <Header />
 
       <h1>Star Wars App</h1>
       <form className="main-home__form--form"></form>
