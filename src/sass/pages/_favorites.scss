@@ -1,0 +1,44 @@
+.favorites-wrapper {
+  background-color: #000;
+  &__main {
+    &-jumplink {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      button {
+        border: none;
+        background: #fff;
+        color: #000;
+        font-weight: bold;
+        padding: 10px 30px;
+        border-radius: 8px;
+        transition: 300ms;
+        cursor: pointer;
+        @media (max-width: 600px) {
+          padding: 8px 26px;
+          font-size: 14px;
+        }
+        &:hover {
+          opacity: 80%;
+        }
+      }
+    }
+    &-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+}
+
+.favorites-empty-state {
+  h3 {
+    color: var(--thirdColor);
+    margin: 60px auto;
+  }
+}
+
+.active-favorite-btn {
+  background-color: var(--secundaryColor) !important;
+}

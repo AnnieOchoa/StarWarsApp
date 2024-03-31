@@ -7,10 +7,11 @@
 @use './components/footer';
 @use './components/header';
 @use './components/cards';
-
+@use './components/planetcard';
 //pages
 @use './pages/login';
 @use './pages/signup';
 @use './pages/home';
 @use './pages/characterList';
 @use './pages/planets';
+@use './pages/favorites';

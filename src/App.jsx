@@ -6,6 +6,7 @@ import SignUp from './pages/signup/SignUp';
 import { PlanetList } from './pages/planetList/PlanetList';
 import CharactersList from './pages/charactersList/CharactersList';
 import SessionProvider from './context/SessionContext';
+import Favorites from './pages/favorites/Favorites';
 
 function App() {
   const [,] = useState(0);
@@ -20,6 +21,7 @@ function App() {
             <Route path="/auth/signup" element={<SignUp />} />
             <Route path="/planetas" element={<PlanetList />} />
             <Route path="/personajes" element={<CharactersList />} />
+            <Route path="/favoritos" element={<Favorites />} />
           </Routes>
         </BrowserRouter>
       </SessionProvider>
