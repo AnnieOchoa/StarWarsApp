@@ -1,11 +1,9 @@
-import React from 'react';
-import logo from '../../assets/images/SW-logo.png';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import personajes from '../../assets/images/personajesCarrusel.jpeg';
 import peliculas from '../../assets/images/peliculasCarrusel.jpg';
 import planetas from '../../assets/images/planetasCarrusel.webp';
-import { Link } from 'react-router-dom';
+
 import { Header } from '../../components/Header';
 
 export const Home = () => {
