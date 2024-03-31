@@ -80,6 +80,7 @@ h6 {
 
 .main-header {
   position: relative;
+  margin-bottom: 80px;
 }
 .main-header__top {
   display: flex;
@@ -400,9 +401,6 @@ h6 {
   background-repeat: no-repeat;
   padding-top: 40px;
   text-align: center;
-}
-.main-list-wrapper__heading {
-  margin-bottom: 40px;
 }
 .main-list-wrapper__heading h1 {
   color: var(--thirdColor);

@@ -1,6 +1,7 @@
 import Cards from '../../components/Cards';
 import { useState, useEffect } from 'react';
 import characterImages from '../../helpers/CharacterImages';
+import { Header } from '../../components/Header';
 
 const CharactersList = () => {
   const [data, setData] = useState(null);
@@ -12,7 +13,11 @@ const CharactersList = () => {
   }, []);
 
   return (
+    <>
+
+
     <main className="main-list">
+    <Header/>
       <div className="main-list-wrapper container">
         <div className="main-list-wrapper__heading">
           <h1>
@@ -42,6 +47,7 @@ const CharactersList = () => {
         </div>
       </div>
     </main>
+    </>
   );
 };
 
