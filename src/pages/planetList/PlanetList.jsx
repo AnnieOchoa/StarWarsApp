@@ -1,43 +1,47 @@
-import { useState, useEffect } from 'react';
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Container from 'react-bootstrap/Container';
-import logo from '../../assets/images/SW-logo.png';
+import { useEffect, useState } from 'react';
+import { Header } from '../../components/Header';
+import PlanetImages from '../../helpers/PlanetImages';
+import PlanetCard from '../../components/PlanetCard';
 
 export const PlanetList = () => {
-  const [listaPlanetas, agregarPlaneta] = useState([]);
+  const [planets, setPlanets] = useState(null);
+
+  const getPlanets = async () => {
+    const response = await fetch('https://swapi.dev/api/planets/');
+    const { results } = await response.json();
+    console.log(results);
+    setPlanets(results);
+  };
 
   useEffect(() => {
-    fetch('https://swapi.tech/api/planets?page=1&limit=70')
-      .then((response) => response.json())
-      .then((data) => {
-        agregarPlaneta(data.results.map((planeta) => planeta));
-      })
-      .catch((err) => {
-        console.log(err.message);
-      });
+    getPlanets();
   }, []);
+
   return (
-    <main className="main-home">
-      <Container fluid="md">
-        <Row xs={1} md={5} className="g-1">
-          {listaPlanetas.map((planeta) => (
-            <Col key={planeta.uid}>
-              <Card>
-                <Card.Img variant="top" src={logo} />
-                <Card.Body>
-                  <Card.Title>{planeta.name}</Card.Title>
-                  <Card.Link href="#">ver descripcion</Card.Link>
-                </Card.Body>
-                <Card.Footer>
-                  <small className="text-muted">StarWars Planet</small>
-                </Card.Footer>
-              </Card>
-            </Col>
+    <div className="planets">
+      <Header />
+      <main className="planets-main">
+        <h1 className="planets-main__title">
+          !Conoce los <span>Planetas</span>!
+        </h1>
+        <p className="planets-main__description">
+          ¡Aquí encontraras algunos <span>planetas</span> de nuestro{' '}
+          <span>universo</span>!
+        </p>
+        <section className="planets-main__cards container">
+          {planets?.map((planet, index) => (
+            <PlanetCard
+              name={planet.name}
+              img={PlanetImages[index]}
+              climate={planet.climate}
+              terrain={planet.terrain}
+              residents={planet.residents?.length}
+              population={planet.population}
+              key={index}
+            />
           ))}
-        </Row>
-      </Container>
-    </main>
+        </section>
+      </main>
+    </div>
   );
 };

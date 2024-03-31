@@ -423,4 +423,57 @@ h6 {
   justify-content: center;
 }
 
+.planets {
+  background-color: #000;
+}
+.planets-main__title {
+  text-align: center;
+  font-size: clamp(35px, 5vw, 65px);
+  color: #fff;
+}
+.planets-main__title span {
+  color: var(--secundaryColor);
+}
+.planets-main__description {
+  text-align: center;
+  color: #fff;
+  font-size: clamp(15px, 2.5vw, 25px);
+  margin-bottom: 40px;
+}
+.planets-main__description span {
+  color: var(--secundaryColor);
+}
+.planets-main__cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.planets-main__cards article {
+  width: 100%;
+  max-width: 400px;
+  background-color: #131212;
+  border-radius: 8px;
+  padding: 12px;
+  color: #fff;
+}
+.planets-main__cards article img {
+  width: 90%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 5px auto;
+  display: flex;
+}
+.planets-main__cards article p, .planets-main__cards article h3 {
+  margin: 0;
+  text-align: center;
+}
+.planets-main__cards article h3 {
+  margin: 10px 0;
+}
+.planets-main__cards article p {
+  margin: 5px 0;
+}
+
 /*# sourceMappingURL=index.css.map */
