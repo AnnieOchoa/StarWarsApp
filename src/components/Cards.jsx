@@ -18,7 +18,6 @@ const cards = ({
 
         <div className="main-card__cover__text">
           <h2>{name}</h2>
-          <p>
             <ul>
               <li>
                 {' '}
@@ -49,8 +48,8 @@ const cards = ({
                 <strong>Género:</strong> {gender}{' '}
               </li>
             </ul>
-          </p>
         </div>
+          <button>Añadir a favoritos</button>
       </div>
     </article>
   );

@@ -7,6 +7,7 @@ const PlanetCard = ({img, name, climate, terrain, residents, population }) => {
         <p> <strong>Terreno: </strong>{terrain} </p>
         <p> <strong>Residentes: </strong>{residents} </p>
         <p><strong>Población</strong> {population}</p>
+        <button>Añadir a Favoritos</button>
     </article>
   )
 }

@@ -32,7 +32,7 @@ const CharactersList = () => {
         <div className="main-list-wrapper__cards">
           {data?.map((character, index) => (
             <Cards
-              key={character.id}
+              key={index}
               image={characterImages[index]}
               name={character.name}
               height={character.height}

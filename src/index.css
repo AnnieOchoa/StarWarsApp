@@ -187,14 +187,13 @@ h6 {
 .main-card {
   width: 100%;
   max-width: 400px;
-  height: 500px;
-  max-height: 600px;
   margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #131212;
   border-radius: 18px;
+  padding: 30px;
   cursor: pointer;
 }
 .main-card__cover__image {
@@ -214,11 +213,24 @@ h6 {
 .main-card__cover__text h2 {
   color: var(--thirdColor);
 }
-.main-card__cover__text p {
+.main-card__cover__text ul {
   color: var(--thirdColor);
 }
 .main-card__cover__text ul li {
   list-style: none;
+}
+.main-card__cover button {
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--secundaryColor);
+  color: #000;
+  padding: 10px 30px;
+  font-weight: bold;
+  transition: 300ms;
+}
+.main-card__cover button:hover {
+  opacity: 80%;
 }
 
 .main-login {
@@ -450,6 +462,8 @@ h6 {
   gap: 25px;
 }
 .planets-main__cards article {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 400px;
   background-color: #131212;
@@ -465,7 +479,8 @@ h6 {
   margin: 5px auto;
   display: flex;
 }
-.planets-main__cards article p, .planets-main__cards article h3 {
+.planets-main__cards article p,
+.planets-main__cards article h3 {
   margin: 0;
   text-align: center;
 }
@@ -474,6 +489,20 @@ h6 {
 }
 .planets-main__cards article p {
   margin: 5px 0;
+}
+.planets-main__cards article button {
+  margin: 20px auto;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--secundaryColor);
+  color: #000;
+  padding: 10px 30px;
+  font-weight: bold;
+  transition: 300ms;
+}
+.planets-main__cards article button:hover {
+  opacity: 80%;
 }
 
 /*# sourceMappingURL=index.css.map */
