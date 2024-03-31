@@ -58,7 +58,6 @@ const CharactersList = () => {
           </div>
         </div>
       </main>
-      <pre>{JSON.stringify(sessionData)}</pre>
     </>
   );
 };
