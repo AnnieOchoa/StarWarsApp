@@ -14,39 +14,37 @@ const CharactersList = () => {
 
   return (
     <>
+      <main className="main-list">
+        <Header />
+        <div className="main-list-wrapper container">
+          <div className="main-list-wrapper__heading">
+            <h1>
+              ¡Conoce los <span>Personajes</span>!
+            </h1>
+            <p>
+              ¡Aquí encontraras algunos <strong>héroes</strong> y{' '}
+              <strong>villanos</strong> de esta historia!
+            </p>
+          </div>
 
-
-    <main className="main-list">
-    <Header/>
-      <div className="main-list-wrapper container">
-        <div className="main-list-wrapper__heading">
-          <h1>
-            ¡Conoce los <span>Personajes</span>!
-          </h1>
-          <p>
-            ¡Aquí encontraras algunos <strong>héroes</strong> y{' '}
-            <strong>villanos</strong> de esta historia!
-          </p>
+          <div className="main-list-wrapper__cards">
+            {data?.map((character, index) => (
+              <Cards
+                key={index}
+                image={characterImages[index]}
+                name={character.name}
+                height={character.height}
+                mass={character.mass}
+                hairColor={character.hair_color}
+                skinColor={character.skin_color}
+                eyeColor={character.eye_color}
+                birthYear={character.birth_year}
+                gender={character.gender}
+              />
+            ))}
+          </div>
         </div>
-
-        <div className="main-list-wrapper__cards">
-          {data?.map((character, index) => (
-            <Cards
-              key={index}
-              image={characterImages[index]}
-              name={character.name}
-              height={character.height}
-              mass={character.mass}
-              hairColor={character.hair_color}
-              skinColor={character.skin_color}
-              eyeColor={character.eye_color}
-              birthYear={character.birth_year}
-              gender={character.gender}
-            />
-          ))}
-        </div>
-      </div>
-    </main>
+      </main>
     </>
   );
 };

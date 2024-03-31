@@ -7,8 +7,8 @@ export const Header = () => {
   const favorites = useRef(null);
 
   const toggleNav = () => {
-    nav.current?.classList.toggle('show-navigation')
-  }
+    nav.current?.classList.toggle('show-navigation');
+  };
 
   return (
     <header className="main-header">
@@ -30,16 +30,16 @@ export const Header = () => {
       <nav ref={nav} className="main-header__nav">
         <ul>
           <li>
-            <Link to='/'>HOME</Link>
+            <Link to="/">HOME</Link>
           </li>
           <li>
             <Link>PELICULAS</Link>
           </li>
           <li>
-            <Link to='/personajes'>PERSONAJES</Link>
+            <Link to="/personajes">PERSONAJES</Link>
           </li>
           <li>
-            <Link to='/planetas'>PLANETAS</Link>
+            <Link to="/planetas">PLANETAS</Link>
           </li>
           <li>
             <Link>FAVORITOS</Link>
