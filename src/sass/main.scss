@@ -6,8 +6,10 @@
 @use './components/button';
 @use './components/footer';
 @use './components/header';
+@use './components/cards';
 
 //pages
 @use './pages/login';
 @use './pages/signup';
 @use './pages/home';
+@use './pages/characterList';

@@ -1,0 +1,40 @@
+.main-card {
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  max-height: 600px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131212;
+  border-radius: 18px;
+  cursor: pointer;
+  &__cover {
+    &__image {
+      width: 90%;
+      img {
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+        object-fit: cover;
+        object-position: center top;
+        margin-bottom: 30px;
+      }
+    }
+    &__text {
+      text-align: center;
+      h2 {
+        color: var(--thirdColor);
+      }
+      p {
+        color: var(--thirdColor);
+      }
+      ul {
+        li {
+          list-style: none;
+        }
+      }
+    }
+  }
+}

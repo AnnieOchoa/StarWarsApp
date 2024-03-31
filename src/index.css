@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 :root {
-  --primaryColor: #000000;
+  --primaryColor: #131212;
   --secundaryColor: #ffe81f;
   --thirdColor: #fff;
 }
@@ -183,6 +183,43 @@ h6 {
   display: block;
 }
 
+.main-card {
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  max-height: 600px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131212;
+  border-radius: 18px;
+  cursor: pointer;
+}
+.main-card__cover__image {
+  width: 90%;
+}
+.main-card__cover__image img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center top;
+  margin-bottom: 30px;
+}
+.main-card__cover__text {
+  text-align: center;
+}
+.main-card__cover__text h2 {
+  color: var(--thirdColor);
+}
+.main-card__cover__text p {
+  color: var(--thirdColor);
+}
+.main-card__cover__text ul li {
+  list-style: none;
+}
+
 .main-login {
   display: flex;
   width: 100%;
@@ -356,6 +393,36 @@ h6 {
 }
 .main-home .nav-home .nav-list li a:hover {
   color: #000000;
+}
+
+.main-list {
+  background-image: url(assets/images/fictional-planet-with-colourful-night-sky-stars-nebula.jpg);
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  text-align: center;
+}
+.main-list-wrapper__heading {
+  margin-bottom: 40px;
+}
+.main-list-wrapper__heading h1 {
+  color: var(--thirdColor);
+  font-size: 65px;
+}
+.main-list-wrapper__heading h1 span {
+  color: var(--secundaryColor);
+}
+.main-list-wrapper__heading p {
+  color: var(--thirdColor);
+  font-size: 25px;
+}
+.main-list-wrapper__heading p strong {
+  color: var(--secundaryColor);
+}
+.main-list-wrapper__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=index.css.map */

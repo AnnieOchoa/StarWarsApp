@@ -37,6 +37,7 @@ export const Home = () => {
           <p className="legend">Planetas</p>
         </div>
       </Carousel>
+      <section className="main-home__img"></section>
     </main>
   );
 };

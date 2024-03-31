@@ -1,0 +1,31 @@
+.main-list {
+  background-image: url(assets/images/fictional-planet-with-colourful-night-sky-stars-nebula.jpg);
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  text-align: center;
+  &-wrapper {
+    &__heading {
+      margin-bottom: 40px;
+      h1 {
+        color: var(--thirdColor);
+        font-size: 65px;
+        span {
+          color: var(--secundaryColor);
+        }
+      }
+      p {
+        color: var(--thirdColor);
+        font-size: 25px;
+        strong {
+          color: var(--secundaryColor);
+        }
+      }
+    }
+    &__cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+  }
+}
