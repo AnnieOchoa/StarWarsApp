@@ -3,71 +3,67 @@ $nav-bg-color: #2b2a0e;
 $nav-text-color: #ead9d9;
 
 .main-home {
-    display: grid;
-    width: 100%;
-    background-color: var(--primaryColor);
-    img {
-      display: flex;
-      align-self: self;
-      margin: 0 auto;
-      width: 268px;
-    }
-    h1 {
-      text-align: center;
-      color: var(--secundaryColor);
-      font-weight: 900;
-    }
-    p {
-      text-align: center;
-      color: #ffff;
-    }
-    @media (max-width: 960px) {
-      flex-direction: column-reverse;
-    }
-
-    &__img {
-      background-image: url(assets/images/sableAmarillo.webp);
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: left;
-      height: 20vh;
-      flex: 0 1 10%;
-     
-      @media (max-width: 960px) {
-        background-color: #000;
-        height: 1000px;
-        width: 100%;
-      }
-    }
-    .nav-home{
-        margin-top: 10px;
-        margin-bottom: 60px;
-        text-align: center;
-        background-color: $nav-bg-color;
-        padding: 10px 20px;
-    
-        .nav-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-    
-            li {
-                display: inline-block;
-                margin-right: 80px;
-    
-                a {
-                    text-decoration: none;
-                    color: $nav-text-color;
-    
-                    &:hover {
-                        color: $primary-color;
-                    }
-                }
-            }
-        }
-        
-}
-
+  display: grid;
+  width: 100%;
+  background-color: var(--primaryColor);
+  img {
+    display: flex;
+    align-self: self;
+    margin: 0 auto;
+    width: 268px;
+  }
+  h1 {
+    text-align: center;
+    color: var(--secundaryColor);
+    font-weight: 900;
+  }
+  p {
+    text-align: center;
+    color: #ffff;
+  }
+  @media (max-width: 960px) {
+    flex-direction: column-reverse;
   }
 
-  
+  &__img {
+    background-image: url(assets/images/sableAmarillo.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 20vh;
+    flex: 0 1 10%;
+
+    @media (max-width: 960px) {
+      background-color: #000;
+      height: 1000px;
+      width: 100%;
+    }
+  }
+  .nav-home {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    text-align: center;
+    background-color: $nav-bg-color;
+    padding: 10px 20px;
+
+    .nav-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        margin-right: 80px;
+
+        a {
+          text-decoration: none;
+          color: $nav-text-color;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}

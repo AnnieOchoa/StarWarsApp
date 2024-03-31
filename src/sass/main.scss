@@ -4,8 +4,10 @@
 //components
 @use './components/textinput';
 @use './components/button';
+@use './components/cards';
 
 //pages
 @use './pages/login';
 @use './pages/signup';
 @use './pages/home';
+@use './pages/characterList';
