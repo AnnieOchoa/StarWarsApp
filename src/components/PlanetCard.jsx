@@ -1,4 +1,12 @@
-const PlanetCard = ({ img, name, climate, terrain, residents, population }) => {
+const PlanetCard = ({
+  img,
+  name,
+  climate,
+  terrain,
+  residents,
+  population,
+  onClick,
+}) => {
   return (
     <article className="planet-card">
       <img src={img} alt={name} />
@@ -21,7 +29,7 @@ const PlanetCard = ({ img, name, climate, terrain, residents, population }) => {
       <p>
         <strong>Población</strong> {population}
       </p>
-      <button>Añadir a Favoritos</button>
+      <button onClick={onClick}>Añadir a Favoritos</button>
     </article>
   );
 };

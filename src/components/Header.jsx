@@ -16,8 +16,7 @@ export const Header = () => {
         <button onClick={toggleNav}>
           <i className="uil uil-bars"></i>
         </button>
-        <Link ref={favorites}>
-          {' '}
+        <Link to="/favoritos" ref={favorites}>
           <span>
             <i className="uil uil-heart"></i>
           </span>
@@ -42,7 +41,7 @@ export const Header = () => {
             <Link to="/planetas">PLANETAS</Link>
           </li>
           <li>
-            <Link>FAVORITOS</Link>
+            <Link to="/favoritos">FAVORITOS</Link>
           </li>
         </ul>
       </nav>

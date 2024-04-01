@@ -8,6 +8,7 @@ const cards = ({
   birthYear,
   gender,
   image,
+  onClick,
 }) => {
   return (
     <article className="main-card">
@@ -49,7 +50,7 @@ const cards = ({
             </li>
           </ul>
         </div>
-        <button>Añadir a favoritos</button>
+        <button onClick={onClick}>Añadir a favoritos</button>
       </div>
     </article>
   );

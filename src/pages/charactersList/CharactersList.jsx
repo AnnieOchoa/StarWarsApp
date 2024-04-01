@@ -1,10 +1,22 @@
 import Cards from '../../components/Cards';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import characterImages from '../../helpers/CharacterImages';
 import { Header } from '../../components/Header';
+import { SessionContext } from '../../context/SessionContext';
 
 const CharactersList = () => {
   const [data, setData] = useState(null);
+  const { setSessionData, sessionData } = useContext(SessionContext);
+
+  const addToFavorites = (character) => {
+    setSessionData({
+      ...sessionData,
+      favorites: {
+        ...sessionData.favorites,
+        ['characters']: [...sessionData.favorites.characters, character],
+      },
+    });
+  };
 
   useEffect(() => {
     fetch('https://swapi.dev/api/people/')
@@ -31,7 +43,7 @@ const CharactersList = () => {
             {data?.map((character, index) => (
               <Cards
                 key={index}
-                image={characterImages[index]}
+                image={characterImages[character.url.split('/')[5]]}
                 name={character.name}
                 height={character.height}
                 mass={character.mass}
@@ -40,6 +52,7 @@ const CharactersList = () => {
                 eyeColor={character.eye_color}
                 birthYear={character.birth_year}
                 gender={character.gender}
+                onClick={() => addToFavorites(character)}
               />
             ))}
           </div>
