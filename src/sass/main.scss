@@ -1,0 +1,20 @@
+//base
+@use './base/base';
+
+//components
+@use './components/textinput';
+@use './components/button';
+@use './components/footer';
+@use './components/header';
+@use './components/cards';
+@use './components/planetcard';
+@use './components/filmcard';
+
+//pages
+@use './pages/login';
+@use './pages/signup';
+@use './pages/home';
+@use './pages/characterList';
+@use './pages/planets';
+@use './pages/films';
+@use './pages/favorites';
