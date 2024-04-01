@@ -5,6 +5,7 @@ import { SessionContext } from '../../context/SessionContext';
 import characterImages from '../../helpers/CharacterImages';
 import PlanetCard from '../../components/PlanetCard';
 import PlanetImages from '../../helpers/PlanetImages';
+import { Footer } from '../../components/Footer';
 
 const Favorites = () => {
   const { sessionData } = useContext(SessionContext);
@@ -108,6 +109,7 @@ const Favorites = () => {
             )}
         </section>
       </main>
+      <Footer/>
     </div>
   );
 };

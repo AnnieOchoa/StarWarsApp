@@ -3,6 +3,7 @@ import { useState, useEffect, useContext } from 'react';
 import characterImages from '../../helpers/CharacterImages';
 import { Header } from '../../components/Header';
 import { SessionContext } from '../../context/SessionContext';
+import { Footer } from '../../components/Footer';
 
 const CharactersList = () => {
   const [data, setData] = useState(null);
@@ -58,6 +59,7 @@ const CharactersList = () => {
           </div>
         </div>
       </main>
+      <Footer/>
     </>
   );
 };

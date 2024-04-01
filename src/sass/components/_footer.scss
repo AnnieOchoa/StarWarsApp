@@ -1,0 +1,33 @@
+.main-footer {
+    position: relative;
+    margin-top: 80px;
+    &__top {
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      width: 95%;
+      max-width: 1400px;
+      margin: 0 auto;
+  
+      a {
+        color: white;
+        text-decoration: none;
+        i {
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+      img {
+        width: 190px;
+        @media (max-width: 768px) {
+          width: 120px;
+        }
+      }
+   
+    }
+   
+  }
+  

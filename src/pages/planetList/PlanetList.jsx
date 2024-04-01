@@ -3,6 +3,7 @@ import { Header } from '../../components/Header';
 import PlanetImages from '../../helpers/PlanetImages';
 import PlanetCard from '../../components/PlanetCard';
 import { SessionContext } from '../../context/SessionContext';
+import { Footer } from '../../components/Footer';
 
 export const PlanetList = () => {
   const [planets, setPlanets] = useState(null);
@@ -54,6 +55,7 @@ export const PlanetList = () => {
           ))}
         </section>
       </main>
+      <Footer/>
     </div>
   );
 };

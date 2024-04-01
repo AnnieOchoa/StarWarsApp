@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 :root {
   --primaryColor: #131212;
   --secundaryColor: #ffe81f;
@@ -6,7 +6,7 @@
 }
 
 * {
-  font-family: 'Red Hat Display', sans-serif !important;
+  font-family: "Red Hat Display", sans-serif !important;
 }
 
 h1,
@@ -22,8 +22,7 @@ body {
   background-color: #000;
 }
 
-.textinput-base,
-.regular-textinput {
+.textinput-base, .regular-textinput {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -31,20 +30,16 @@ body {
   min-width: 300px;
   color: var(--thirdColor);
 }
-.textinput-base input,
-.regular-textinput input {
+.textinput-base input, .regular-textinput input {
   border: 1px solid var(--secundaryColor);
   border-radius: 4px;
   padding: 8px;
 }
-.textinput-base input:focus,
-.regular-textinput input:focus {
+.textinput-base input:focus, .regular-textinput input:focus {
   outline: 1px solid var(--secundaryColor);
 }
 
-.base-btn,
-.filled-btn,
-.outlined-btn {
+.base-btn, .filled-btn, .outlined-btn {
   border: 1px solid var(--secundaryColor);
   border-radius: 5px;
   padding: 11px 29px;
@@ -52,9 +47,7 @@ body {
   font-weight: bold;
   transition: 300ms;
 }
-.base-btn:hover,
-.filled-btn:hover,
-.outlined-btn:hover {
+.base-btn:hover, .filled-btn:hover, .outlined-btn:hover {
   opacity: 80%;
 }
 
@@ -87,6 +80,40 @@ body {
 }
 .text-btn:focus {
   outline: 1px solid var(--primaryColor);
+}
+
+.main-footer {
+  position: relative;
+  margin-top: 80px;
+}
+.main-footer__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.main-footer__top a {
+  color: white;
+  text-decoration: none;
+}
+.main-footer__top a i {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+@media (max-width: 768px) {
+  .main-footer__top a {
+    display: none;
+  }
+}
+.main-footer__top img {
+  width: 190px;
+}
+@media (max-width: 768px) {
+  .main-footer__top img {
+    width: 120px;
+  }
 }
 
 .main-header {
@@ -522,49 +549,6 @@ article.planet-card button:hover {
   gap: 25px;
 }
 
-.favorites-wrapper {
-  background-color: #000;
-}
-.favorites-wrapper__main-jumplink {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.favorites-wrapper__main-jumplink button {
-  border: none;
-  background: #fff;
-  color: #000;
-  font-weight: bold;
-  padding: 10px 30px;
-  border-radius: 8px;
-  transition: 300ms;
-  cursor: pointer;
-}
-@media (max-width: 600px) {
-  .favorites-wrapper__main-jumplink button {
-    padding: 8px 26px;
-    font-size: 14px;
-  }
-}
-.favorites-wrapper__main-jumplink button:hover {
-  opacity: 80%;
-}
-.favorites-wrapper__main-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.favorites-empty-state h3 {
-  color: var(--thirdColor);
-  margin: 60px auto;
-}
-
-.active-favorite-btn {
-  background-color: var(--secundaryColor) !important;
-}
-
 .films {
   background-color: #000;
 }
@@ -633,6 +617,49 @@ article.planet-card button:hover {
 }
 .films-main__cards article button:hover {
   opacity: 80%;
+}
+
+.favorites-wrapper {
+  background-color: #000;
+}
+.favorites-wrapper__main-jumplink {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.favorites-wrapper__main-jumplink button {
+  border: none;
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 8px;
+  transition: 300ms;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .favorites-wrapper__main-jumplink button {
+    padding: 8px 26px;
+    font-size: 14px;
+  }
+}
+.favorites-wrapper__main-jumplink button:hover {
+  opacity: 80%;
+}
+.favorites-wrapper__main-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.favorites-empty-state h3 {
+  color: var(--thirdColor);
+  margin: 60px auto;
+}
+
+.active-favorite-btn {
+  background-color: var(--secundaryColor) !important;
 }
 
 /*# sourceMappingURL=index.css.map */

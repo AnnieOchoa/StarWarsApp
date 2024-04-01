@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { Header } from '../../components/Header';
 import FilmsImages from '../../helpers/FilmsImages';
 import FilmsCard from '../../components/FilmsCard';
+import { Footer } from '../../components/Footer';
 
 const FilmsList = () => {
     const [films, setFilms] = useState(null);
@@ -45,6 +46,7 @@ const FilmsList = () => {
             ))}
           </section>
         </main>
+        <Footer/>
       </div>
     );
   
