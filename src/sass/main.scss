@@ -8,9 +8,11 @@
 @use './components/header';
 @use './components/cards';
 
+
 //pages
 @use './pages/login';
 @use './pages/signup';
 @use './pages/home';
 @use './pages/characterList';
 @use './pages/planets';
+@use './pages/films';

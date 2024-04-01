@@ -33,7 +33,7 @@ export const Header = () => {
             <Link to="/">HOME</Link>
           </li>
           <li>
-            <Link>PELICULAS</Link>
+            <Link to="/peliculas">PELICULAS</Link>
           </li>
           <li>
             <Link to="/personajes">PERSONAJES</Link>
