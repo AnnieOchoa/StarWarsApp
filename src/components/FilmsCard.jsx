@@ -1,4 +1,4 @@
-const FilmsCard = ({ img, title, episode_id, director, producer, release_date }) => {
+const FilmsCard = ({ img, title, episode_id, director, producer, release_date, onClick }) => {
     return (
       <article className="films-card">
         <img src={img} alt={title} />
@@ -21,7 +21,7 @@ const FilmsCard = ({ img, title, episode_id, director, producer, release_date })
         <p>
           <strong>Fecha de lanzamiento</strong> {release_date}
         </p>
-        <button>Añadir a Favoritos</button>
+        <button onClick={onClick}>Añadir a Favoritos</button>
       </article>
     );
   };

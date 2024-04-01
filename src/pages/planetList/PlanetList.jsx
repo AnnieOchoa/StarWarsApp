@@ -4,6 +4,15 @@ import PlanetImages from '../../helpers/PlanetImages';
 import PlanetCard from '../../components/PlanetCard';
 import { SessionContext } from '../../context/SessionContext';
 import { Footer } from '../../components/Footer';
+import Swal from 'sweetalert2';
+
+const Toast = Swal.mixin({
+  toast: true,
+  position: 'top-end',
+  timer: 1500,
+  timerProgressBar: true,
+  showConfirmButton: false
+});
 
 export const PlanetList = () => {
   const [planets, setPlanets] = useState(null);
@@ -11,12 +20,16 @@ export const PlanetList = () => {
 
   const addPlanetToFavorites = (planet) => {
     setSessionData({
-      ...sessionData,
+      ...sessionData, 
       favorites: {
         ...sessionData.favorites,
         ['planets']: [...sessionData.favorites.planets, planet],
       },
     });
+    Toast.fire({
+      icon: 'success',
+      title: 'Se ha agregado a los favoritos'
+    })
   };
 
   const getPlanets = async () => {

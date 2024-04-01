@@ -4,6 +4,15 @@ import characterImages from '../../helpers/CharacterImages';
 import { Header } from '../../components/Header';
 import { SessionContext } from '../../context/SessionContext';
 import { Footer } from '../../components/Footer';
+import Swal from 'sweetalert2';
+
+const Toast = Swal.mixin({
+  toast: true,
+  position: 'top-end',
+  timer: 1500,
+  timerProgressBar: true,
+  showConfirmButton: false
+});
 
 const CharactersList = () => {
   const [data, setData] = useState(null);
@@ -17,6 +26,10 @@ const CharactersList = () => {
         ['characters']: [...sessionData.favorites.characters, character],
       },
     });
+    Toast.fire({
+      icon: 'success',
+      title: 'Se ha agregado a los favoritos'
+    })
   };
 
   useEffect(() => {

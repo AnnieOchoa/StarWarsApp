@@ -6,6 +6,8 @@ import characterImages from '../../helpers/CharacterImages';
 import PlanetCard from '../../components/PlanetCard';
 import PlanetImages from '../../helpers/PlanetImages';
 import { Footer } from '../../components/Footer';
+import FilmsCard from '../../components/FilmsCard';
+import FilmsImages from '../../helpers/FilmsImages';
 
 const Favorites = () => {
   const { sessionData } = useContext(SessionContext);
@@ -74,7 +76,19 @@ const Favorites = () => {
               </div>
             ))}
           {activeTab === 'peliculas' && (
-            <>{/* Aqui van las cards de los planetas */}</>
+            sessionData.favorites.movies?.map((film, index) => (
+              <div key={index}>
+                <FilmsCard 
+                   img={FilmsImages[film.url.split('/')[5]]}
+                   title={film.title}
+                   episode_id={film.episode_id}
+                   director={film.director}
+                   producer={film.producer}
+                   release_date={film.release_date}
+                   key={index}
+                />
+              </div>
+            ))
           )}
           {activeTab === 'planetas' &&
             sessionData.favorites.planets?.map((planet, index) => (
