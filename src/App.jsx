@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home } from './pages/home/Home';
 import Login from './pages/login/Login';
@@ -7,21 +6,22 @@ import { PlanetList } from './pages/planetList/PlanetList';
 import CharactersList from './pages/charactersList/CharactersList';
 import SessionProvider from './context/SessionContext';
 import Favorites from './pages/favorites/Favorites';
+import ProtectedRoutes from './components/ProtectedRoutes';
 
 function App() {
-  const [,] = useState(0);
-
   return (
     <>
       <SessionProvider>
         <BrowserRouter>
           <Routes>
-            <Route index path="/" element={<Home />} />
             <Route path="/auth/login" element={<Login />} />
             <Route path="/auth/signup" element={<SignUp />} />
-            <Route path="/planetas" element={<PlanetList />} />
-            <Route path="/personajes" element={<CharactersList />} />
-            <Route path="/favoritos" element={<Favorites />} />
+            <Route element={<ProtectedRoutes />}>
+              <Route index path="/" element={<Home />} />
+              <Route path="/planetas" element={<PlanetList />} />
+              <Route path="/personajes" element={<CharactersList />} />
+              <Route path="/favoritos" element={<Favorites />} />
+            </Route>
           </Routes>
         </BrowserRouter>
       </SessionProvider>
