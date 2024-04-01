@@ -1,29 +1,28 @@
 .films {
-    background-color: #000;
-    &-main {
-      &__title {
-        text-align: center;
-        font-size: clamp(35px, 5vw, 65px);
-        color: #fff;
-        span {
-          color: var(--secundaryColor);
-        }
-      }
-      &__description {
-        text-align: center;
-        color: #fff;
-        font-size: clamp(15px, 2.5vw, 25px);
-        margin-bottom: 40px;
-        span {
-          color: var(--secundaryColor);
-        }
-      }
-      &__cards {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 25px;
+  background-color: #000;
+  &-main {
+    &__title {
+      text-align: center;
+      font-size: clamp(35px, 5vw, 65px);
+      color: #fff;
+      span {
+        color: var(--secundaryColor);
       }
     }
+    &__description {
+      text-align: center;
+      color: #fff;
+      font-size: clamp(15px, 2.5vw, 25px);
+      margin-bottom: 40px;
+      span {
+        color: var(--secundaryColor);
+      }
+    }
+    &__cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
   }
-  
+}

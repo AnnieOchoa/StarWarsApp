@@ -12,7 +12,6 @@ export const Home = () => {
     <main className="main-home">
       <Header />
 
-      
       <form className="main-home__form--form"></form>
       <Carousel
         autoPlay={true}
@@ -24,26 +23,33 @@ export const Home = () => {
         width="100%"
       >
         <div>
-          <Link to= "/peliculas">
-          <img src={peliculas} />
-          <p className="legend"><h1>Ver Peliculas</h1></p>
+          <Link to="/peliculas">
+            <img src={peliculas} />
+            <p className="legend">
+              <h1>Ver Peliculas</h1>
+            </p>
           </Link>
         </div>
         <div>
-        <Link to= "/personajes">
-          <img src={personajes} />
-          <p className="legend"> <h1>Ver Personajes</h1></p>
+          <Link to="/personajes">
+            <img src={personajes} />
+            <p className="legend">
+              {' '}
+              <h1>Ver Personajes</h1>
+            </p>
           </Link>
         </div>
         <div>
-        <Link to= "/planetas">
-          <img src={planetas} />
-          <p className="legend"> <h1>Ver Planetas</h1></p>
+          <Link to="/planetas">
+            <img src={planetas} />
+            <p className="legend">
+              {' '}
+              <h1>Ver Planetas</h1>
+            </p>
           </Link>
         </div>
       </Carousel>
-      <Footer/>
-      
+      <Footer />
     </main>
   );
 };

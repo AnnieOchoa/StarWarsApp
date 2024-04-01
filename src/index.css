@@ -128,7 +128,7 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
-.main-header__top button {
+.main-header__top button:not(.main-header__top-avatar) {
   background: none;
   border: none;
   cursor: pointer;
@@ -136,16 +136,16 @@ body {
   display: none;
 }
 @media (max-width: 768px) {
-  .main-header__top button {
+  .main-header__top button:not(.main-header__top-avatar) {
     display: block;
   }
 }
-.main-header__top button i {
+.main-header__top button:not(.main-header__top-avatar) i {
   transition: 300ms;
   color: #b5b7b7;
   font-size: 25px;
 }
-.main-header__top button i:hover {
+.main-header__top button:not(.main-header__top-avatar) i:hover {
   color: #fff;
 }
 .main-header__top a {
@@ -220,6 +220,11 @@ body {
 
 .show-navigation {
   display: block;
+}
+
+.active_navlink {
+  color: var(--secundaryColor) !important;
+  font-weight: bold;
 }
 
 .main-card {

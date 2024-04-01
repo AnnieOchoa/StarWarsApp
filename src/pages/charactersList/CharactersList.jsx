@@ -11,7 +11,7 @@ const Toast = Swal.mixin({
   position: 'top-end',
   timer: 1500,
   timerProgressBar: true,
-  showConfirmButton: false
+  showConfirmButton: false,
 });
 
 const CharactersList = () => {
@@ -28,8 +28,8 @@ const CharactersList = () => {
     });
     Toast.fire({
       icon: 'success',
-      title: 'Se ha agregado a los favoritos'
-    })
+      title: 'Se ha agregado a los favoritos',
+    });
   };
 
   useEffect(() => {
@@ -72,7 +72,7 @@ const CharactersList = () => {
           </div>
         </div>
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 };

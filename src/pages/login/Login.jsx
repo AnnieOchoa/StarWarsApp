@@ -37,11 +37,6 @@ const Login = () => {
             email: user.email,
           }),
         );
-        Swal.fire({
-          title: '¡Inicio de Sesión Exitoso!',
-          text: 'Has ingresado correctamente. Serás redirigido a la página de inicio.',
-          icon: 'success',
-        });
         navigate('/');
       })
       .catch((response) => {

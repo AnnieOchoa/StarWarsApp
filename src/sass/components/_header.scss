@@ -9,7 +9,7 @@
     max-width: 1400px;
     margin: 0 auto;
 
-    button {
+    button:not(.main-header__top-avatar) {
       background: none;
       border: none;
       cursor: pointer;
@@ -92,4 +92,9 @@
 
 .show-navigation {
   display: block;
+}
+
+.active_navlink {
+  color: var(--secundaryColor) !important;
+  font-weight: bold;
 }

@@ -11,7 +11,7 @@ const Toast = Swal.mixin({
   position: 'top-end',
   timer: 1500,
   timerProgressBar: true,
-  showConfirmButton: false
+  showConfirmButton: false,
 });
 
 export const PlanetList = () => {
@@ -20,7 +20,7 @@ export const PlanetList = () => {
 
   const addPlanetToFavorites = (planet) => {
     setSessionData({
-      ...sessionData, 
+      ...sessionData,
       favorites: {
         ...sessionData.favorites,
         ['planets']: [...sessionData.favorites.planets, planet],
@@ -28,8 +28,8 @@ export const PlanetList = () => {
     });
     Toast.fire({
       icon: 'success',
-      title: 'Se ha agregado a los favoritos'
-    })
+      title: 'Se ha agregado a los favoritos',
+    });
   };
 
   const getPlanets = async () => {
@@ -68,7 +68,7 @@ export const PlanetList = () => {
           ))}
         </section>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

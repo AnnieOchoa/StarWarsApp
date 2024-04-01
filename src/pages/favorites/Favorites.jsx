@@ -75,21 +75,20 @@ const Favorites = () => {
                 />
               </div>
             ))}
-          {activeTab === 'peliculas' && (
+          {activeTab === 'peliculas' &&
             sessionData.favorites.movies?.map((film, index) => (
               <div key={index}>
-                <FilmsCard 
-                   img={FilmsImages[film.url.split('/')[5]]}
-                   title={film.title}
-                   episode_id={film.episode_id}
-                   director={film.director}
-                   producer={film.producer}
-                   release_date={film.release_date}
-                   key={index}
+                <FilmsCard
+                  img={FilmsImages[film.url.split('/')[5]]}
+                  title={film.title}
+                  episode_id={film.episode_id}
+                  director={film.director}
+                  producer={film.producer}
+                  release_date={film.release_date}
+                  key={index}
                 />
               </div>
-            ))
-          )}
+            ))}
           {activeTab === 'planetas' &&
             sessionData.favorites.planets?.map((planet, index) => (
               <div key={index}>
@@ -123,7 +122,7 @@ const Favorites = () => {
             )}
         </section>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
